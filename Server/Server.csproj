@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UserFiles\**" />
+    <Content Remove="UserFiles\**" />
+    <EmbeddedResource Remove="UserFiles\**" />
+    <None Remove="UserFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\SpeechProcessing.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\SpeechSeparation.proto" GrpcServices="Client" />
+	<Protobuf Include="Protos\SpeechTranscription.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
+  </ItemGroup>
+
+</Project>

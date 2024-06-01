@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SpeechDiarizationService", "SpeechDiarizationService\SpeechDiarizationService.pyproj", "{9A749540-2C8B-4A58-981D-3D93E6318CF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechTranscriptionService", "SpeechTranscriptionService\SpeechTranscriptionService.csproj", "{A78FAC97-00FA-4741-A443-4C539ADD0733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{BB848F12-48C6-4132-AE91-909ABF77334B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A749540-2C8B-4A58-981D-3D93E6318CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A749540-2C8B-4A58-981D-3D93E6318CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78FAC97-00FA-4741-A443-4C539ADD0733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78FAC97-00FA-4741-A443-4C539ADD0733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78FAC97-00FA-4741-A443-4C539ADD0733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78FAC97-00FA-4741-A443-4C539ADD0733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB848F12-48C6-4132-AE91-909ABF77334B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB848F12-48C6-4132-AE91-909ABF77334B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB848F12-48C6-4132-AE91-909ABF77334B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB848F12-48C6-4132-AE91-909ABF77334B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9E5EB1C-EF72-46DE-8611-89D1E1469C61}
+	EndGlobalSection
+EndGlobal

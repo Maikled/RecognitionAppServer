@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "SpeechProcessingServer";
+
+message Request {
+	bytes data = 1;
+}
+
+message SegmentData {
+	string text = 1;
+	double start = 2;
+	double end = 3;
+}
+
+message SpeechData {
+	string current_speaker = 1;
+	repeated SegmentData segments_data = 2;
+}
+
+message Response {
+	string id = 1;
+	repeated SpeechData results_data = 2;
+	string error = 3;
+	sint32 status_code = 4;
+}
+
+service SpeechProcessing {
+	rpc ProcessingAudio (stream Request) returns (Response);
+}

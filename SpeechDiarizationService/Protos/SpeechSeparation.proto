@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "SpeechSeparationServer";
+
+message SeparationData {
+    double start = 1;
+    double end = 2;
+    string speaker_name = 3;
+}
+
+message ResponseData {
+    string file_name = 1;
+    repeated SeparationData separation_datas = 2;
+}
+
+message RequestData {
+    string file_path = 1;
+}
+
+service SpeechSeparation
+{
+    rpc GetSeparation(RequestData) returns (ResponseData);
+}
